@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./iniciar-sesion-empleado.component.css']
 })
 export class IniciarSesionEmpleadoComponent implements OnInit {
+  title = 'Divisas Pantera';
 
   constructor() { }
 

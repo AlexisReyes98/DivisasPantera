@@ -27,15 +27,11 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 250%;
     color: black;
-    padding: 20px 200px;
-}
-
-.formulario {
-    padding: 150px 230px;
+    padding: 100px 200px;
 }
 
 .boton1 {
-    margin: 100px;
+    margin: 90px;
     padding: 25px;
     background-color: black;
     color: white;

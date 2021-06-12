@@ -7,13 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Divisas Pantera';
+  entrar:boolean = true;
+  salir:boolean = false;
 
-  next1() {
-    '<app-iniciar-sesion-socio></app-iniciar-sesion-socio>'
-  }
-
-  next2() {
-    '<app-iniciar-sesion-empleado></app-iniciar-sesion-empleado>'
+  next() {
+    this.entrar = false;
+    this.salir = true;
   }
 
 }

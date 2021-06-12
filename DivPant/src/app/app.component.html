@@ -1,11 +1,20 @@
-<h1> {{ title }} </h1>  <!--Llaves dobles son la sintaxis de enlace de interpolación de Angular-->
+<div *ngIf="entrar">
 
-<img class="img1" src="./assets/images/garra.png" alt="Logo Divisas Pantera" height="500"/>
+  <h1> {{ title }} </h1>  <!--Llaves dobles son la sintaxis de enlace de interpolación de Angular-->
 
-<div class="d1">
-  <p class="p1">Home...</p>
-
-  <button type="submit" class="boton1" (click)="next1()">Socio</button>
-  <button type="submit" class="boton2"(click)="next2()">Empleado</button>
+  <img class="img1" src="./assets/images/garra.png" alt="Logo Divisas Pantera" height="500"/>
   
+  <div class="d1">
+    <p class="p1">Home...</p>
+  
+    <a routerLink="inicioSocio" routerLinkActive="active" (click)="next()" class="boton1">Socio</a>
+    <a routerLink="inicioEmpleado" routerLinkActive="active" (click)="next()" class="boton2">Empleado</a>
+    
+  </div>
+
 </div>
+
+<div  *ngIf="salir">
+  <router-outlet></router-outlet>
+</div>
+
