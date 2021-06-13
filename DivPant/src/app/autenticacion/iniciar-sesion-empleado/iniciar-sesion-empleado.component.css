@@ -25,11 +25,45 @@ h1 {
 
 .p1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 250%;
+    font-size: 200%;
     color: black;
-    padding: 45px 45px;
+    padding: 30px 80px;
 }
 
 .formulario {
-    padding: 150px 230px;
+    margin: 0 auto;
+    padding: 70px;
+}
+
+input {
+    margin-bottom: 20px;
+    padding: .5em;
+}
+
+.boton {
+    margin: 130px;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+}
+
+ul {
+    list-style: none;
+}
+
+form li + li {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
 }

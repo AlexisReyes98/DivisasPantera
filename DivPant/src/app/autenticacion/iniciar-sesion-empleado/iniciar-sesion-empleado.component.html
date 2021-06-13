@@ -4,10 +4,22 @@
 
 
 <div class="d1">
-  <p class="p1">Iniciar sesión empleado</p>
+  <p class="p1">Iniciar Sesión Empleado</p>
 
   <form class="formulario" action="">
-
+    <ul>
+      <li>
+        <label for="NumEmp">Número de Empleado: </label>
+        <input type="text" id="NumEmp" placeholder="Escribe tu No. de Empleado">
+      </li>
+      <li>
+        <label for="Contra">Contraseña: </label>
+        <input type="password" id="Contra" placeholder="Escribe tu Contraseña">
+      </li>
+      <li>
+        <a routerLink="logIn" routerLinkActive="active" class="boton">Log In</a>
+      </li>
+    </ul>
   </form>
 
 </div>

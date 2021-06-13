@@ -27,23 +27,29 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 250%;
     color: black;
-    padding: 100px 200px;
+    padding: 100px 190px;
 }
 
 .boton1 {
     margin: 90px;
-    padding: 25px;
+    padding: 20px 25px;
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 50px;
+    text-decoration: none;
 }
 
 .boton2 {
     margin: 50px;
-    padding: 25px;
+    padding: 20px 25px;
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 50px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
 }
