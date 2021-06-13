@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: gainsboro;
+}
+
+.encabezado {
+    background: orange;
+    width: 100%;
+    float: left;
+}
+
+.logo1 {
+    float: left;
+}
+
+.t0 {
+    float: left;
+    color: orange;
+}
+
+.t1 {
+    float: left;
+    font-size: 250%;
+}
+
+.t2 {
+    float: left;
+    color: orange;
+}
+
+.logo3 {
+    float: left;
+}
+
+.contenedor {
+    padding: 300px;
+}
