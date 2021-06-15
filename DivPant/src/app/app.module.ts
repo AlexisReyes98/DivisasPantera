@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 //service
-import { UsuariosService } from './services/usuarios.service';
+import { DivisasService } from './services/divisas.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,7 +19,7 @@ import { AutenticacionModule } from './autenticacion/autenticacion.module'
     AutenticacionModule
   ],
   providers: [
-    UsuariosService
+    DivisasService
   ],
   bootstrap: [AppComponent]
 })
