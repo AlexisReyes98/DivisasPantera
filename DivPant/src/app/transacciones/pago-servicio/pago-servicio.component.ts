@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+import { PagoServicio } from 'src/app/model/pago-servicio';
+
+import { DivisasService } from 'src/app/services/divisas.service';
+
 @Component({
   selector: 'app-pago-servicio',
   templateUrl: './pago-servicio.component.html',
@@ -9,11 +13,15 @@ export class PagoServicioComponent implements OnInit {
   entrar3:boolean = true;
   salir3:boolean = false;
 
-  lista = document.getElementById("lista");
-	tareaInput = document.getElementById("tareaInput");
-	btnNuevaTarea = document.getElementById("btn-agregar");
+  game: PagoServicio = {
+    id_Pago: 0,
+    id_TipoPago: '',
+    id_Socio: 0,
+    fecha: new Date(),
+    monto: 0
+  };
 
-  constructor() { }
+  constructor(private divisas: DivisasService) { }
 
   ngOnInit(): void {
   }
