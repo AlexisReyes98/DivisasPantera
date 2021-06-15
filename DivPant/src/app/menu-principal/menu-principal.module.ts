@@ -14,6 +14,11 @@ import { MenuGerenteComponent } from './menu-gerente/menu-gerente.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    MenuSocioComponent,
+    MenuAdminComponent,
+    MenuGerenteComponent
   ]
 })
 export class MenuPrincipalModule { }

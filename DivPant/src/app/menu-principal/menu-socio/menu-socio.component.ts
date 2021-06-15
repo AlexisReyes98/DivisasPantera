@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-socio.component.css']
 })
 export class MenuSocioComponent implements OnInit {
+  entrar:boolean = true;
 
   constructor() { }
 

@@ -1,25 +1,34 @@
-<h1> {{ title }} </h1>
+<div *ngIf="entrar1">
 
-<img class="img1" src="./assets/images/garra.png" alt="Logo Divisas Pantera" height="500"/>
+  <h1> {{ title }} </h1>
+
+  <img class="img1" src="./assets/images/garra.png" alt="Logo Divisas Pantera" height="500"/>
 
 
-<div class="d1">
-  <p class="p1">Iniciar Sesión Empleado</p>
+  <div class="d1">
+    <p class="p1">Iniciar Sesión Empleado</p>
 
-  <form class="formulario" action="">
-    <ul>
-      <li>
-        <label for="NumEmp">Número de Empleado: </label>
-        <input type="text" id="NumEmp" placeholder="Escribe tu No. de Empleado">
-      </li>
-      <li>
-        <label for="Contra">Contraseña: </label>
-        <input type="password" id="Contra" placeholder="Escribe tu Contraseña">
-      </li>
-      <li>
-        <a routerLink="logIn" routerLinkActive="active" class="boton">Log In</a>
-      </li>
-    </ul>
-  </form>
+    <form class="formulario" action="">
+      <ul>
+        <li>
+          <label for="NumEmp">Número de Empleado: </label>
+          <input type="text" id="NumEmp" placeholder="Escribe tu No. de Empleado">
+        </li>
+        <li>
+          <label for="Contra">Contraseña: </label>
+          <input type="password" id="Contra" placeholder="Escribe tu Contraseña">
+        </li>
+        <li>
+          <a routerLink="logIn" routerLinkActive="active" (click)="next()" class="boton">Log In</a>
+        </li>
+      </ul>
+    </form>
 
+  </div>
+
+</div>
+
+<div *ngIf="salir1">
+  <app-menu-admin></app-menu-admin>
+  <router-outlet></router-outlet>
 </div>
