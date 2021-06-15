@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PagoAnualidadComponent } from './pago-anualidad.component';
+import { HistSaldosCargadosComponent } from './hist-saldos-cargados.component';
 
-describe('PagoAnualidadComponent', () => {
-  let component: PagoAnualidadComponent;
-  let fixture: ComponentFixture<PagoAnualidadComponent>;
+describe('HistSaldosCargadosComponent', () => {
+  let component: HistSaldosCargadosComponent;
+  let fixture: ComponentFixture<HistSaldosCargadosComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PagoAnualidadComponent ]
+      declarations: [ HistSaldosCargadosComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PagoAnualidadComponent);
+    fixture = TestBed.createComponent(HistSaldosCargadosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
