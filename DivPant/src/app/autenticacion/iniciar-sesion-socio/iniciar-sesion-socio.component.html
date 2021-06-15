@@ -1,32 +1,25 @@
-<div *ngIf="entrar1">
+<h1> {{ title }} </h1>
 
-  <h1> {{ title }} </h1>
+<img class="img1" src="./assets/images/garra.png" alt="Logo Divisas Pantera" height="500"/>
 
-  <img class="img1" src="./assets/images/garra.png" alt="Logo Divisas Pantera" height="500"/>
 
-  <div class="d1">
-    <p class="p1">Iniciar Sesión Socio</p>
+<div class="d1">
+  <p class="p1">Iniciar Sesión Socio</p>
 
-    <form class="formulario" action="">
-      <ul>
-        <li>
-          <label for="NumCuen">Número de Cuenta: </label>
-          <input type="text" id="NumCuen" placeholder="Escribe tu No. de Cuenta">
-        </li>
-        <li>
-          <label for="Contra">Contraseña: </label>
-          <input type="password" id="Contra" placeholder="Escribe tu Contraseña">
-        </li>
-        <li>
-          <a routerLink="menuSocio" routerLinkActive="active" (click)="next()" class="boton">Log In</a>
-        </li>
-      </ul>
-    </form>
-  </div>
+  <form class="formulario" action="">
+    <ul>
+      <li>
+        <label for="NumCuen">Número de Cuenta: </label>
+        <input type="text" id="NumCuen" placeholder="Escribe tu No. de Cuenta">
+      </li>
+      <li>
+        <label for="Contra">Contraseña: </label>
+        <input type="password" id="Contra" placeholder="Escribe tu Contraseña">
+      </li>
+      <li>
+        <a routerLink="logIn" routerLinkActive="active" class="boton">Log In</a>
+      </li>
+    </ul>
+  </form>
 
-</div>
-
-<div *ngIf="salir1">
-  <app-menu-socio></app-menu-socio>
-  <router-outlet></router-outlet>
 </div>
