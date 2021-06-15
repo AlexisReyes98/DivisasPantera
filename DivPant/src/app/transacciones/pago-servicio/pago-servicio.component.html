@@ -1,1 +1,32 @@
-<p>pago-servicio works!</p>
+<div *ngIf="entrar3">
+
+    <div class="logo1">
+        <img src="./assets/images/garra1.png" width="230" alt=""/>
+    </div>
+
+    <div class="principal">
+		<div class="wrap">
+			<form class="formulario" action="">
+				<input type="text" id="tareaInput" placeholder="Agrega el pago a realizar">
+				<input type="button" class="boton" id="btn-agregar" value="Agregar Pago">
+			</form>
+		</div>
+	</div>
+
+	<div class="tareas">
+		<div class="wrap">
+			<ul class="lista" id="lista">
+				<li><a href="#">Pago de Trimestre</a></li>
+				<li><a href="#">Pago de Anualidad</a></li>
+				<li><a href="#">Pago de Adeudo de Biblioteca</a></li>
+                <li><a href="#">Pago en Comedor</a></li>
+				<li><a href="#">Pago de Examen de Recuperación</a></li>
+			</ul>
+		</div>
+	</div>
+
+</div>
+
+<div *ngIf="salir3">
+
+</div>
