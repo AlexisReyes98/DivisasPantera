@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-gerente.component.css']
 })
 export class MenuGerenteComponent implements OnInit {
-  entrar:boolean = true;
 
   constructor() { }
 
