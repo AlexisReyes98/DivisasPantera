@@ -1,25 +1,38 @@
-<div *ngIf="entrar">
+<div *ngIf="entrar2">
 
     <header class="encabezado">
         <div class="logo1">
-            <img src="garra1.png" width="100" alt=""/>
+            <img src="./assets/images/garra1.png" width="100" alt=""/>
         </div>
         <p class="t0">
-            ---------------------------------------------------------------------------------
+            --------------------------------------------------------------------
         </p>
         <p class="t1">
             Menú Principal Socio
         </p>
         <p class="t2">
-            ---------------------------------------------------------------------------------
+            ---------------------------------------------------------------------
         </p>
         <div class="logo3">
-            <img src="user.png" width="100" alt=""/>
+            <img src="./assets/images/user.png" width="100" alt=""/>
         </div>
     </header>
 
     <div class="contenedor">
-        
+        <a routerLink="pagoServicio" routerLinkActive="active" (click)="next()" class="boton1">Pago de Servicio</a>
+        <a routerLink="compraServicio" routerLinkActive="active" class="boton1">Compra de Servicio</a>
+        <a routerLink="transferencias" routerLinkActive="active" class="boton1">Transferencia Bancaria</a>
+        <a routerLink="estadoCuenta" routerLinkActive="active" class="boton1">Consulta tu Estado de Cuenta</a>
+        <a routerLink="infoPersonal" routerLinkActive="active" class="boton1">Consulta tu info. Personal</a>
+        <a routerLink="histCompras" routerLinkActive="active" class="boton1">Historial de Compras</a>
+        <a routerLink="histPagos" routerLinkActive="active" class="boton1">Historial de Pagos</a>
+        <a routerLink="histTransferencias" routerLinkActive="active" class="boton1">Historial de Transferencia</a>
+        <a routerLink="histSaldos" routerLinkActive="active" class="boton1">Historial de Saldos Cargados</a>
     </div>
     
+</div>
+
+<div *ngIf="salir2">
+    <app-pago-servicio></app-pago-servicio>
+    <router-outlet></router-outlet>
 </div>

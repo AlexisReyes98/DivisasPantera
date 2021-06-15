@@ -1,25 +1,31 @@
-<div *ngIf="entrar">
+<div *ngIf="entrar2">
 
     <header class="encabezado">
         <div class="logo1">
-            <img src="garra1.png" width="100" alt=""/>
+            <img src="./assets/images/garra1.png" width="100" alt=""/>
         </div>
         <p class="t0">
-            ---------------------------------------------------------------------------------
+            -------------------------------------------------------------------
         </p>
         <p class="t1">
             Menú Principal Gerente
         </p>
         <p class="t2">
-            ---------------------------------------------------------------------------------
+            -------------------------------------------------------------------
         </p>
         <div class="logo3">
-            <img src="user.png" width="100" alt=""/>
+            <img src="./assets/images/user.png" width="100" alt=""/>
         </div>
     </header>
 
     <div class="contenedor">
-        
+        <a routerLink="agregarAdmin" routerLinkActive="active" class="boton1">Agregar Administrador</a>
+        <a routerLink="modificarAdmin" routerLinkActive="active" class="boton1">Modificar Administrador</a>
+        <a routerLink="eliminarAdmin" routerLinkActive="active" class="boton1">Eliminar Administrador</a>
     </div>
     
-  </div>
+</div>
+
+<div *ngIf="salir2">
+
+</div>

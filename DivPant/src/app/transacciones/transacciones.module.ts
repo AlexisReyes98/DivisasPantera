@@ -15,6 +15,9 @@ import { CompraServicioComponent } from './compra-servicio/compra-servicio.compo
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    PagoServicioComponent,
   ]
 })
 export class TransaccionesModule { }

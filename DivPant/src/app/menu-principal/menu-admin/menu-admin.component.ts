@@ -6,11 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-admin.component.css']
 })
 export class MenuAdminComponent implements OnInit {
-  entrar:boolean = true;
+  entrar2:boolean = true;
+  salir2:boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  next() {
+    this.entrar2 = false;
+    this.salir2 = true;
+  }
+  
 }
