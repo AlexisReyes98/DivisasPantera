@@ -1,6 +1,6 @@
 # DivisasPantera
 
-UEA: Proyecto de Ingeniería de Software II.
+UEA: Proyecto de Ingeniería de Software II (PIS II).
 
 Declaración y visión del alcance del software.
 Divisas Pantera es un banco creado por estudiantes de la UAM-C pensado para los
